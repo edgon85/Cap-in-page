@@ -1,0 +1,61 @@
+header.masthead {
+  text-align: left;
+  color: #333;
+  background-image: url("../img/header/s-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  @include background-cover;
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: bold;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include heading-font; // @include serif-font;
+      span {
+        color: $primary;
+      }
+    }
+    .intro-heading {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 25px;
+      color: #777 !important;
+      padding-right: 30%;
+      @include serif-font;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: bold;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include heading-font;
+        span {
+          color: $primary;
+        }
+      }
+      .intro-heading{
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 26px;
+          margin-bottom: 50px;
+          padding-right: 50%;
+          color: #777 !important;
+          @include serif-font;
+      }
+    }
+  }
+}

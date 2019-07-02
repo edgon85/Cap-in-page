@@ -1,0 +1,140 @@
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+.circlecito {
+  color: #f8f9fa !important;
+  &:hover {
+    color: $primary !important;
+  }
+}
+.iconito {
+  color: $primary;
+  &:hover {
+    color: $logo-azul;
+  }
+}
+.tellme-more{
+  text-decoration: none !important;
+}
+
+// services single page
+.services {
+  background-color: #fff;
+  .banner {
+    margin-top: 126px;
+    background-image: url("../img/header/email-pattern.png");
+    background-color: rgb(75, 74, 74);
+    background-blend-mode: soft-light;
+    // background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    .title {
+      text-align: center;
+      color: white;
+      h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      p {
+        @include serif-font;
+        // color: #777 !important;
+      }
+    }
+  }
+
+  .main-service {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    .item {
+      height: 300px;
+      .single-service {
+        margin-top: 75px;
+        border-radius: 5px;
+        border: 1px solid #e2e2e2;
+        padding: 0 30px 20px;
+        text-align: center;
+        &:hover {
+          border-color: $logo-azul;
+          .icon {
+            i {
+              background-color: $logo-azul;
+              border-color: $logo-azul;
+            }
+          }
+          .content {
+            a {
+              h4 {
+                color: $logo-azul;
+              }
+            }
+          }
+        }
+        .icon {
+          height: 50px;
+          margin-top: -40px;
+          margin-bottom: 50px;
+          text-align: center;
+          i {
+            text-align: center;
+            font-size: 36px !important;
+            color: #e2e2e2 !important;
+            width: 75px;
+            line-height: 73px;
+            border: 1px solid #e2e2e2;
+            border-radius: 50%;
+            background-color: #fff;
+            display: inline-block;
+            &::before {
+              font-size: 36px !important;
+              margin-left: 0;
+            }
+          }
+        }
+        .content {
+          a {
+            text-decoration: none;
+            background-color: transparent;
+            h4 {
+              font-size: 20px;
+              color: #333;
+              font-weight: 700;
+            }
+          }
+          p {
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #777;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .services {
+    .banner {
+      margin-top: 68px;
+      padding: 75px;
+    }
+
+    .main-service{
+      .item{
+        .single-service{
+          border-color: $logo-azul;
+          .icon{
+            i{
+              background-color: $logo-azul;
+              border-color: $logo-azul;
+            }
+          }
+        }
+      }
+    }
+  }
+}

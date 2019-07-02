@@ -1,0 +1,135 @@
+.main-contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .form {
+    // Styling for the contact section
+    section#contact {
+      padding: 0;
+      .section-heading {
+        color: #777;
+      }
+      .form-group {
+        margin-bottom: 25px;
+        input,
+        textarea {
+          padding: 20px;
+        }
+        input.form-control {
+          height: auto;
+        }
+        textarea.form-control {
+          height: 248px;
+        }
+      }
+      .form-control:focus {
+        border-color: $primary;
+        box-shadow: none;
+      }
+      ::-webkit-input-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+        @include heading-font;
+      }
+      :-moz-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+        /* Firefox 18- */
+        @include heading-font;
+      }
+      ::-moz-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+        /* Firefox 19+ */
+        @include heading-font;
+      }
+      :-ms-input-placeholder {
+        font-weight: 700;
+        color: $gray-400;
+        @include heading-font;
+      }
+    }
+  }
+  .info {
+    .contact-info {
+      margin-top: 90px;
+      ul {
+        list-style-type: none;
+        .single-info {
+          padding-right: 0;
+          .icon {
+            i {
+              font-size: 34px;
+              color: $logo-azul;
+              line-height: 35px;
+            }
+          }
+          .content {
+            padding-left: 15px;
+            p {
+              margin-bottom: 0;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 26px;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+    .social {
+      margin-top: 25px;
+      padding: 20px 0;
+      a {
+        padding: 10px;
+        display: inline-block;
+        margin: 0 20px;
+        width: 50px;
+        font-size: 22px;
+        color: #fff;
+        background: #000;
+        border-radius: 100px;
+        &:hover {
+          text-decoration: none;
+        }
+        &.facebook {
+          background: #3b5998;
+        }
+        &.twitter {
+          background: #55acee;
+        }
+        &.youtube {
+          background: #8a3ab9;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-contact {
+    margin-top: 0;
+    text-align: center;
+
+    section#contact {
+      margin-top: 20px;
+      .section-sm-subheading{
+        display: none;
+        text-align: center !important;
+        .section-subheading{
+          margin-bottom: 15px !important;
+        }
+      }
+      .forma{
+        margin-top: 20px;
+      }
+    }
+    // section h3.section-subheading
+    .info{
+      .contact-info{
+        margin-top: 45px;
+        padding-left: 20%;
+      }
+    }
+  }
+
+}
