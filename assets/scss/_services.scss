@@ -116,6 +116,29 @@
   }
 }
 
+.product{
+  .inner{
+    figure{
+     width: 100%;
+     img{
+      width: 100%;
+     }
+    }
+    .parrafo{
+      color: #6C757D;
+      font-size: 16px;
+    }
+    .listas{
+      color: #6C757D;
+      list-style: none;
+      li{
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
 @media only screen and (max-width: 992px) {
   .services {
     .banner {
