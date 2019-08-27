@@ -1,6 +1,6 @@
 header.masthead {
   text-align: left;
-  color: #333;
+  color: $white;
   background-image: url("../img/header/header-3.jpg");
   background-color: rgb(125, 125, 125);
   background-blend-mode: soft-light;
@@ -13,7 +13,7 @@ header.masthead {
     padding-bottom: 100px;
     .intro-lead-in {
       font-size: 22px;
-      font-style: bold;
+      font-weight: 700;
       line-height: 22px;
       margin-bottom: 25px;
       @include heading-font; // @include serif-font;
@@ -41,7 +41,6 @@ header.masthead {
       color: $white;
       .intro-lead-in {
         font-size: 40px;
-        font-style: bold;
         font-weight: 700;
         line-height: 40px;
         margin-bottom: 25px;

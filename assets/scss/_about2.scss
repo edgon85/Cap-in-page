@@ -63,7 +63,7 @@
 .main-about {
   .mision-vision {
     padding: 0;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     .title {
       text-transform: uppercase;
@@ -178,8 +178,15 @@
         margin-bottom: 0;
       }
     }
+    .link-contact{
+      color: $white;
+      text-decoration: none;
+    }
   }
   @media (min-width: 768px) {
+    .mision-vision{
+      margin-top: 100px;
+    }
     .timeline {
       &:before {
         left: 50%;
@@ -259,6 +266,10 @@
         &.timeline-inverted > .timeline-panel {
           padding: 0 100px 20px 20px;
         }
+      }
+      .link-contact{
+        color: $white;
+        text-decoration: none;
       }
     }
   }
